@@ -9,8 +9,6 @@ from botocore.exceptions import ClientError
 from config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, BUCKET_NAME
 from trp import Document
 
-st.beta_set_page_config(page_title='Synergy IDP')
-
 client = boto3.client('textract',
                       aws_access_key_id=AWS_ACCESS_KEY_ID,
                       aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
